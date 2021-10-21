@@ -71,7 +71,7 @@
         </span>
 
       </div>
-      <input v-model="searchQuery" v-on:change="performSearch" class="search-box bg-transparent shadow appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry">
+      <input v-model="searchQuery" v-on:change="performSearch" class="search-box bg-transparent shadow appearance-none border border-white py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry">
     </div>
   </nav>
 </template>
