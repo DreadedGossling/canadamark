@@ -66,6 +66,10 @@
         <span v-for="item in navItems" :key="item.name" class="flex flex-row mt-6 md:mt-0 mr-6"> <NuxtLink :to="item.link" class="flex items-center no-underline flex-row" @click.native="toggleVisibility" >
           <component :is="item.icon" class="w-5 h-5 mr-2 ml-1" /> {{ item.name }} </NuxtLink>
         </span>
+                <span class="flex items-center no-underline flex-row" @click.native="goToContact">
+          Contact
+        </span>
+
       </div>
       <input class="search-box bg-transparent shadow appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry">
     </div>
@@ -81,6 +85,19 @@
 import { ref } from "@nuxtjs/composition-api";
 export default {
   components: {
+  },
+  methods: {
+    goToContact(event){
+      console.log(event)
+      event.preventDefault()
+      this.toggleVisibility()
+      const el = document.getElementById('pageBottom');
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        el.scrollIntoView({behavior: 'smooth'});      
+      }
+    }
   },
   setup() {
     const isVisible = ref(false);
@@ -105,10 +122,6 @@ export default {
             name: "Manufacturers",
             link: "/manufacturers",
         },
-        {
-            name: "Contact",
-            link: "/contact",
-        }
     ];    
     return {
       isVisible,
