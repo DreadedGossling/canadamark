@@ -71,33 +71,15 @@
         </span>
 
       </div>
-      <input class="search-box bg-transparent shadow appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry">
+      <input v-model="searchQuery" v-on:change="performSearch" class="search-box bg-transparent shadow appearance-none border py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry">
     </div>
   </nav>
 </template>
-<style scoped>
-.search-box{
-  width: 260px
-}
-</style>
 
 <script>
 import { ref } from "@nuxtjs/composition-api";
 export default {
   components: {
-  },
-  methods: {
-    goToContact(event){
-      console.log(event)
-      event.preventDefault()
-      this.toggleVisibility()
-      const el = document.getElementById('pageBottom');
-
-      if (el) {
-        // Use el.scrollIntoView() to instantly scroll to the element
-        el.scrollIntoView({behavior: 'smooth'});      
-      }
-    }
   },
   setup() {
     const isVisible = ref(false);
@@ -122,12 +104,42 @@ export default {
             name: "Manufacturers",
             link: "/manufacturers",
         },
-    ];    
+    ];
+    const searchQuery = '';    
     return {
       isVisible,
       navItems,
       toggleVisibility,
+      searchQuery,
     };
-  }
+  },
+  methods: {
+    goToContact(event){
+      event.preventDefault()
+      this.toggleVisibility()
+      const el = document.getElementById('pageBottom');
+
+      if (el) {
+        // Use el.scrollIntoView() to instantly scroll to the element
+        el.scrollIntoView({behavior: 'smooth'});      
+      }
+    },
+    performSearch(){
+      console.log(this.searchQuery)
+      if (this.searchQuery === "CM-392682"){
+        this.$router.push('/search/diamond?q=CM-392682')
+      }else if (this.searchQuery === "CMJ-10006773") {
+        this.$router.push('/search/jewelry?q=CMJ-10006773')
+      }else if (this.searchQuery !== "") {
+        this.searchQuery = ""
+      }
+    },
+  },
 };
 </script>
+
+<style scoped>
+.search-box{
+  width: 260px
+}
+</style>
