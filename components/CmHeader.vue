@@ -1,7 +1,7 @@
 <template>
   <!-- Main container for Navbar -->
       
-  <nav id="navigation" class="bg-cmBlack sticky top-0 z-40 font-body transition-all duration-500">
+  <nav id="navigation" class="bg-cm-black sticky top-0 z-40 font-body transition-all duration-500">
     <!-- Container to give Navbar a fixed width -->
     <div class="flex mx-2 items-center justify-between flex-wrap p-4">
         
@@ -62,7 +62,7 @@
       </div>
         
       <!-- Items of collapsible menu -->
-      <div :class="{ hidden: !isVisible }" class="text-white hover:text-white justify-center flex-grow md:flex md:items-center md:w-auto md:ml-10">
+      <div :class="{ hidden: !isVisible }" class="text-white font-sanomat hover:text-white justify-center flex-grow md:flex md:items-center md:w-auto md:ml-10">
         <span v-for="item in navItems" :key="item.name" class="flex flex-row mt-6 md:mt-0 mr-6"> <NuxtLink :to="item.link" class="flex items-center no-underline flex-row" @click.native="toggleVisibility" >
           <component :is="item.icon" class="w-5 h-5 mr-2 ml-1" /> {{ item.name }} </NuxtLink>
         </span>
@@ -71,7 +71,7 @@
         </span>
 
       </div>
-      <input v-model="searchQuery" v-on:change="performSearch" class="search-box bg-transparent shadow appearance-none border border-white py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry">
+      <input v-model="searchQuery" v-on:change="performSearch" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry">
     </div>
   </nav>
 </template>
@@ -140,6 +140,6 @@ export default {
 
 <style scoped>
 .search-box{
-  width: 260px
+  width: 240px
 }
 </style>

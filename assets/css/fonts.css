@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Sanomat Web';
+  font-style: regular;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/Sanomat-Web-Regular-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'D-Din';
+  font-style: regular;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/D-Din-Regular.ttf')
+}

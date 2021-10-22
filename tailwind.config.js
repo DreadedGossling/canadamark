@@ -6,10 +6,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cmBlack: "#191F1E",
-        cmBlue: "#677F91",
-        cmDarkBlue: "#121C37"
+        'cm-black': "#191F1E",
+        'cm-blue': "#677F91",
+        'cm-dark-blue': "#121C37"
       },
+      fontFamily: {
+        'sanomat': ['Sanomat Web'],
+        'ddin': ['D-Din']
+      }
     },
   },
   variants: {

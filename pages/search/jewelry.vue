@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div class=" text-cmBlack flex flex-col items-center justify-between p-6 text-center my-8">
+    <div class=" text-cm-black flex flex-col items-center justify-between p-6 text-center my-8">
       <h1 class="max-w-6xl">Summary</h1>
       <p class="max-w-6xl mb-8">Your Jewellery Certificate</p>
     </div>
     <div class="flex justify-center items-center">
       <div class="max-w-3xl rounded shadow-lg my-8">
-        <div class="w-full p-4 text-cmDarkBlue text-center">
+        <div class="w-full p-4 text-cm-dark-blue text-center">
           <p>True luxury is feeling good about your choices.</p>
         </div>
-        <div class="bg-cmDarkBlue text-white p-10">
+        <div class="bg-cm-dark-blue text-white p-10">
           <div class="grid grid-cols-2 gap-1 justify-evenly">
             <div class="flex flex-col justify-center">
               <div>
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full p-4 text-cmDarkBlue text-center">
+        <div class="w-full p-4 text-cm-dark-blue text-center">
           <svg class="mx-auto" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.2975 9.80947L9.49316 13.7212L13.2989 17.6315L17.1032 13.7198L13.2975 9.80947Z" fill="#191F1E"/>
             <path d="M13.2468 22.0257L5.06105 13.6134L13.2468 5.20115V0L0 13.6134L13.2468 27.2269V22.0257Z" fill="#191F1E"/>
