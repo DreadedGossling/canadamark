@@ -2,4 +2,5 @@
     div
         cm-header
         nuxt
+        cm-footer
 </template>

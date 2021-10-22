@@ -66,7 +66,7 @@
         <span v-for="item in navItems" :key="item.name" class="flex flex-row mt-6 md:mt-0 mr-6"> <NuxtLink :to="item.link" class="flex items-center no-underline flex-row" @click.native="toggleVisibility" >
           <component :is="item.icon" class="w-5 h-5 mr-2 ml-1" /> {{ item.name }} </NuxtLink>
         </span>
-                <span class="flex items-center no-underline flex-row" @click.native="goToContact">
+        <span class="flex items-center no-underline flex-row" @click.native="goToContact">
           Contact
         </span>
 
