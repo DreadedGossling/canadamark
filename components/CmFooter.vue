@@ -68,7 +68,12 @@ export default {
     ];
 
     return {
-      navItems
+      navItems,
+      name: '',
+      company: '',
+      email: '',
+      phone: '',
+      message: '',
     }
   }
 };
