@@ -66,12 +66,12 @@
         <span v-for="item in navItems" :key="item.name" class="flex flex-row mt-6 md:mt-0 mr-6"> <NuxtLink :to="item.link" class="flex items-center no-underline flex-row" @click.native="toggleVisibility" >
           <component :is="item.icon" class="w-5 h-5 mr-2 ml-1" /> {{ item.name }} </NuxtLink>
         </span>
-        <span class="flex items-center no-underline flex-row" @click.native="goToContact">
+        <a class="flex items-center no-underline flex-row" @click.prevent="goToContact">
           Contact
-        </span>
+        </a>
 
       </div>
-      <input v-model="searchQuery" v-on:change="performSearch" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry">
+      <input v-model="searchQuery" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry" @change="performSearch" >
     </div>
   </nav>
 </template>
@@ -117,15 +117,10 @@ export default {
     goToContact(event){
       event.preventDefault()
       this.toggleVisibility()
-      const el = document.getElementById('pageBottom');
-
-      if (el) {
-        // Use el.scrollIntoView() to instantly scroll to the element
-        el.scrollIntoView({behavior: 'smooth'});      
-      }
+      console.log(document.body.scrollHeight)
+      window.scrollTo({top: document.body.scrollHeight, left: 0, behavior: 'smooth'});      
     },
     performSearch(){
-      console.log(this.searchQuery)
       if (this.searchQuery === "CM-392682"){
         this.$router.push('/search/diamond?q=CM-392682')
       }else if (this.searchQuery === "CMJ-10006773") {
@@ -141,5 +136,8 @@ export default {
 <style scoped>
 .search-box{
   width: 240px
+}
+a {
+  cursor: pointer;
 }
 </style>
