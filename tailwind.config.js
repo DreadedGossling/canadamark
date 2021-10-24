@@ -5,6 +5,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      height: {
+        'h-700px': '700px'
+      },  
       colors: {
         'cm-black': "#191F1E",
         'cm-blue': "#677F91",

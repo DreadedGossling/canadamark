@@ -59,7 +59,7 @@ export default {
         },
         {
             name: "Terms & Conditions",
-            link: "/terms-and-conditions",
+            link: "/terms-conditions",
         },
         {
             name: "Privacy Policy",
