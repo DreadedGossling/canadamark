@@ -71,7 +71,15 @@
         </a>
 
       </div>
-      <input v-model="searchQuery" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry" @change="performSearch" >
+      <div class="flex justify-end">
+        <input v-model="searchQuery" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry" @change="performSearch" >
+        <button class="border border-white border-l-0 px-2" @click="performSearch">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20.9999 20.9999L16.6499 16.6499" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>          
+        </button>
+      </div>
     </div>
   </nav>
 </template>
@@ -115,15 +123,13 @@ export default {
   },
   methods: {
     goToContact(event){
-      event.preventDefault()
       this.toggleVisibility()
-      console.log(document.body.scrollHeight)
       window.scrollTo({top: document.body.scrollHeight, left: 0, behavior: 'smooth'});      
     },
     performSearch(){
-      if (this.searchQuery === "CM-392682"){
+      if (this.searchQuery.toLowerCase() === "cm-392682"){
         this.$router.push('/search/diamond?q=CM-392682')
-      }else if (this.searchQuery === "CMJ-10006773") {
+      }else if (this.searchQuery.toLowerCase() === "cmj-10006773") {
         this.$router.push('/search/jewelry?q=CMJ-10006773')
       }else if (this.searchQuery !== "") {
         this.searchQuery = ""
