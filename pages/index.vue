@@ -34,7 +34,7 @@
     </div>
     <div class="flex flex-col items-center justify-between p-6 text-center my-8 max-w-6xl mx-auto">
       <h1 class="text-cm-blue mb-12 font-sanomat">Our Journey</h1>
-      <video src="/videos/journey.mp4" autoplay loop playsinline muted></video>
+      <video src="/videos/canadamark.mp4" autoplay loop playsinline muted></video>
     </div>
   </div>
 </template>

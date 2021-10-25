@@ -7,15 +7,15 @@
     <div class="flex flex-col">
       <div class="flex mx-auto items-center">
         <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/sourcing.png" alt="" />
-        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <div class="h-px w-28 border-2 border-cm-pantone"></div>
         <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/sorting.png" alt="" />
-        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <div class="h-px w-28 border-2 border-cm-pantone"></div>
         <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/cutting.png" alt="" />
-        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <div class="h-px w-28 border-2 border-cm-pantone"></div>
         <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/selection.png" alt="" />
-        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <div class="h-px w-28 border-2 border-cm-pantone"></div>
         <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/inscription.png" alt="" />
-        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <div class="h-px w-28 border-2 border-cm-pantone"></div>
         <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/jewellery.png" alt="" />
       </div>
       <div class="flex mx-auto my-4">
@@ -91,7 +91,7 @@
     </div>
     <div class="flex flex-col items-center justify-between p-6 text-center my-8">
       <h1 class="text-cm-black mb-12">Our Journey</h1>
-      <video src="/videos/our-journey.mkv" autoplay loop playsinline muted></video>
+      <video src="/videos/canadamark.mp4" autoplay loop playsinline muted></video>
     </div>
   </div>
 </template>
