@@ -12,9 +12,9 @@
       </div>
       <div class="bg-origin h-full w-auto"></div>
     </div>
-    <div class="max-w-6xl grid grid-cols-2 gap-0 p-6 my-16 mt-20 mx-auto">
-      <div class="h-700px flex items-center bg-black">
-        <video src="/videos/preview.mp4" autoplay loop playsinline muted></video>
+    <div class="max-w-6xl h-700px grid grid-cols-2 gap-0 p-6 my-16 mt-20 mx-auto">
+      <div class="h-full w-auto bg-cm-black flex items-center">
+        <image-slider />
       </div>
       <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-4/5 my-auto -ml-12 px-10 z-10">
         <h1 class="font-sanomat">Define Your</h1>
@@ -74,5 +74,7 @@
   }
 </style>
 <script>
-export default {}
+import ImageSlider from '../components/ImageSlider.vue'
+export default {
+  components: { ImageSlider },}
 </script>
