@@ -53,8 +53,16 @@
 <script>
 export default {
   data(){
-    const jewellery = [{name: 'Mahendra Brothers Exports Pvt. Ltd / UNIDESIGN', emails: ['rishi@mahendrabrothers.com'], url: 'https://mahendrabrothers.com', phone: '+91 22 6661 5600'}]
-    const diamond = [{name: 'CJ Exporters', emails: ['mitul@cjexporters.com'], url: 'https://cjexporters.com', phone: '+91 22 4910 4000'}]
+    const jewellery = [
+      {name: 'Mahendra Brothers Exports Pvt. Ltd / UNIDESIGN', emails: ['rishi@mahendrabrothers.com'], url: 'https://mahendrabrothers.com', phone: '+91 22 6661 5600'},
+      {name: 'Corona Jewellery Company Ltd.', emails: ['mike@coronajewellery.com'], url: 'http://www.coronajewellery.com/', phone: '+1 416 7622222'}]
+    const diamond = [
+      {name: 'Singh Diamonds', emails: ['karan@singhdiamonds.com', 'info@singhdiamonds.com'], url: 'http://www.singhdiamonds.com/', phone: '+91 22 26754675'},
+      {name: 'Star Rays', emails: ['rahul@starrays.com'], url: 'http://starrays.com', phone: '+91 261 255 4444'},
+      {name: 'Kapu Gems Llp', emails: ['kalpesh@kapugems.com'], url: 'http://www.kapugems.com/', phone: '+91 22 4311 2233'},
+      {name: 'Finestar Jewellery and Diamonds Pvt. Ltd.', emails: ['nilesh@finestardiamonds.com', 'elza@finestardiamonds.com'], url: 'http://www.finestardiamonds.com', phone: '+91 22 6663 9999'},
+      {name: 'Hari Krishna Exports Pvt. Ltd.', emails: ['bhavik.bhalala@hk.co', 'gd@hk.co'], url: 'http://www.hk.co', phone: '+91 22 2367 8111'},
+      {name: 'Shivani Gems Inc.', emails: ['mayur@shivanigems.com'], url: 'http://www.shivanigems.com/', phone: '+1-212-593-2750'}]
     const polishers = [
       {name: 'Finestar Jewellery and Diamonds Pvt. Ltd.', emails: ['nilesh@finestardiamonds.com', 'elza@finestardiamonds.com'], url: 'http://www.finestardiamonds.com', phone: '+91 22 6663 9999'},
       {name: 'Hari Krishna Exports Pvt. Ltd.', emails: ['bhavik.bhalala@hk.co', 'gd@hk.co'], url: 'http://www.hk.co', phone: '+91 22 2367 8111'},
