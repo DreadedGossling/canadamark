@@ -12,7 +12,9 @@
     </div>
     <div class="flex flex-col items-center justify-between p-6 text-center my-8">
       <h1 class="max-w-6xl text-cm-blue mb-12 font-sanomat">Our Diamonds</h1>
-      <image-slider />
+            <div class="h-700px flex items-center bg-black">
+        <video src="/videos/preview.mp4" autoplay loop playsinline muted></video>
+      </div>
     </div>
     <div class="max-w-6xl grid grid-cols-2 gap-0 p-6 my-8 mx-auto">
       <div><img class="h-full w-auto" src="/images/engagement.png" alt=""></div>
