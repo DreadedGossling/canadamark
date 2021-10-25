@@ -15,7 +15,7 @@
         <h1 class="font-sanomat">The 4C’s</h1>
         <p class="text-center text24 font-ddin leading-tight">Diamonds are evaluated for carat weight, color grade, clarity grade and cut grade. This ranking standard is known as the 4Cs of Diamond Quality.</p>
       </div>
-      <div><img class="h-full w-auto" src="/images/natural-diamond-nestled-in-kimberlite.png" alt=""></div>
+      <div><img class="h-full w-auto" src="/images/bhb-086.jpg" alt=""></div>
     </div>
     <div class="flex flex-col items-center justify-between p-6 text-center text-cm-black my-8">
       <h1 class="max-w-6xl font-sanomat">Cut</h1>
@@ -83,7 +83,7 @@
     background-image: url('/images/diamonds_kimberlite.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 550px;
+    height: 650px;
     position: relative;
   }
   h1 {
@@ -103,7 +103,9 @@
     font-size: 20px;
     line-height: 1.125;
   }
-
+  .h-700px {
+    height: 700px;
+  }
 </style>
 <script>
 export default {}

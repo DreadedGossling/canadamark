@@ -33,7 +33,7 @@
 </template>
 <style scoped>
   .top-section {
-    background-image: url('/images/diamonds_kimberlite.png');
+    background-image: url('/images/20180416-253A5988.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;

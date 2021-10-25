@@ -1,12 +1,35 @@
 <template>
   <div>
-    <div class=" text-cm-black flex flex-col items-center justify-between p-6 text-center my-8">
-      <h1 class="max-w-6xl">Summary</h1>
-      <p class="max-w-6xl mb-8">Your Diamond’s Birth Certificate</p>
+    <div class=" text-cm-black flex flex-col items-center justify-between p-6 text-center my-8 font-ddin leading-tight">
+      <h1 class="max-w-6xl font-sanomat">Summary</h1>
+      <p class="max-w-6xl my-4">Your Diamond’s Birth Certificate</p>
     </div>
-    <div class="max-w-5xl rounded shadow-lg my-8 mx-auto">
-      <div class="w-full p-4 text-cm-dark-blue text-center">
-        <p>True luxury is feeling good about your choices.</p>
+    <div class="flex flex-col">
+      <div class="flex mx-auto items-center">
+        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/sourcing.png" alt="" />
+        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/sorting.png" alt="" />
+        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/cutting.png" alt="" />
+        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/selection.png" alt="" />
+        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/inscription.png" alt="" />
+        <div class="h-px w-28 border-4 border-cm-pantone"></div>
+        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/jewellery.png" alt="" />
+      </div>
+      <div class="flex mx-auto my-4">
+        <span class="w-52 text-center">Sourcing</span>
+        <span class="w-52 text-center">Sorting</span>
+        <span class="w-52 text-center">Cutting & Polishing</span>
+        <span class="w-52 text-center">Selection & Grading</span>
+        <span class="w-52 text-center">Inscription</span>
+        <span class="w-52 text-center">Jewelry & Design</span>
+      </div>
+    </div>
+    <div class="max-w-5xl rounded box-shadow my-8 mx-auto">
+      <div class="w-full p-4 font-light text-cm-dark-blue text-center">
+        <h3 class="text-2xl">True luxury is feeling good about your choices.</h3>
       </div>
       <div class="bg-cm-dark-blue text-white p-10">
         <div class="grid grid-cols-3 gap-1 justify-evenly">
@@ -41,7 +64,8 @@
           <div class="h-full">
             <div class="flex flex-col justify-between items-center ml-auto">
             <svg width="190" height="189" viewBox="0 0 190 189" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.48926 79.3063L101.249 66.45M101.249 66.45L186.275 76.3844M101.249 66.45L39.0127 19.7M101.249 66.45L157.641 26.1281M185.399 118.751L94.8206 129.855M94.8206 129.855L2.48926 117.875M94.8206 129.855L104.755 186.831M94.8206 129.855L87.5158 186.831M188.028 94.5C188.028 146.139 146.167 188 94.5283 188C42.8897 188 1.02832 146.139 1.02832 94.5C1.02832 42.8614 42.8897 1 94.5283 1C146.167 1 188.028 42.8614 188.028 94.5Z" stroke="white" stroke-width="2"/>
+            <path d="M2.48926 79.3063L101.249 66.45M101.249 66.45L186.275 76.3844M101.249 66.45L39.0127 19.7M101.249 66.45L157.641 26.1281M185.399 118.751L94.8206 129.855M94.8206 129.855L2.48926 117.875M94.8206 129.855L104.755 186.831M94.8206 129.855L87.5158 186.831M188.028 94.5C188.028 146.139 146.167 188 94.5283 188C42.8897 188 1.02832 146.139 1.02832 94.5C1.02832 42.8614 42.8897 1 94.5283 1C146.167 1 188.028 42.8614 188.028 94.5Z" stroke="white" stroke-width="2"/>
+            <text x="95" y="105" text-anchor="middle" fill="white" font-size="24">CM-392682</text>
             </svg>
             <svg class="mt-8" width="221" height="144" viewBox="0 0 221 144" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M73.4818 9.72178L36.4209 5.36774L73.4818 1H147.574L184.621 5.36774L147.574 9.72178H73.4818Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,14 +106,15 @@
   h1 {
     font-size: 64px;
   }
-
   p {
     font-size: 36px;
   }
-
   .text22 {
     font-size: 22px;
     line-height: 1.125;
+  }
+  .box-shadow {
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
   }
 </style>
 <script>
