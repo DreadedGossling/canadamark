@@ -83,7 +83,8 @@
     background-image: url('/images/diamonds_kimberlite.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 650px;
+    background-position: 50% 60%;
+    height: 550px;
     position: relative;
   }
   h1 {

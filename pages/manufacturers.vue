@@ -25,8 +25,9 @@
 </template>
 <style scoped>
   .top-section {
-    background-image: url('/images/jewelry-manufacturers.png');
+    background-image: url('/images/jewelry-manufacturers.jpg');
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
     height: 550px;
     position: relative;

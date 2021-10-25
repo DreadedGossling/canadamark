@@ -36,6 +36,7 @@
     background-image: url('/images/20180416-253A5988.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 90%;
     height: 550px;
     position: relative;
   }
