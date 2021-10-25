@@ -15,7 +15,7 @@
         <h1 class="font-sanomat">The 4C’s</h1>
         <p class="text-center text24 font-ddin leading-tight">Diamonds are evaluated for carat weight, color grade, clarity grade and cut grade. This ranking standard is known as the 4Cs of Diamond Quality.</p>
       </div>
-      <div><img class="h-full w-auto" src="/images/bhb-086.jpg" alt=""></div>
+      <div class="bg-4c h-full w-auto"></div>
     </div>
     <div class="flex flex-col items-center justify-between p-6 text-center text-cm-black my-8">
       <h1 class="max-w-6xl font-sanomat">Cut</h1>
@@ -105,7 +105,13 @@
     line-height: 1.125;
   }
   .h-700px {
-    height: 700px;
+    height: 748px;
+  }
+  .bg-4c {
+    background-image: url('/images/bhb-086.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 </style>
 <script>
