@@ -80,10 +80,10 @@
 </template>
 <style scoped>
   .top-section {
-    background-image: url('/images/diamonds_kimberlite.png');
+    background-image: url('/images/diamonds_kimberlite.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 60%;
+    background-position: center;
     height: 550px;
     position: relative;
   }

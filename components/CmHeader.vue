@@ -127,10 +127,11 @@ export default {
       window.scrollTo({top: document.body.scrollHeight, left: 0, behavior: 'smooth'});      
     },
     performSearch(){
-      if (this.searchQuery.toLowerCase() === "cm-392682"){
-        this.$router.push('/search/diamond?q=CM-392682')
-      }else if (this.searchQuery.toLowerCase() === "cmj-10006773") {
-        this.$router.push('/search/jewelry?q=CMJ-10006773')
+      const prefix = this.searchQuery.split('-')[0]
+      if (prefix && prefix.toLowerCase() === "cm"){
+        this.$router.push('/search/diamond?q='+this.searchQuery)
+      }else if (prefix && prefix.toLowerCase() === "cmj") {
+        this.$router.push('/search/jewelry?q='+this.searchQuery)
       }else if (this.searchQuery !== "") {
         this.searchQuery = ""
       }

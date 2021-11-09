@@ -1,9 +1,9 @@
 <template>
-  <div class="slider bg-cm-black">    
-    <div class="slides bg-cm-black" ref="carouselContainer">
-      <div v-for="(item, index) in imageSrcs" :key="item" :class="`bg-cm-black carouselItem flex flex-col order-${index}`" >
-        <img class="w-1/2" :src="item" />
-        <div class="w-full h-32 diamond-shadow -mt-16"></div>
+  <div class="slider">    
+    <div class="slides" ref="carouselContainer">
+      <div v-for="(item, index) in imageSrcs" :key="item" :class="`carouselItem flex flex-col mb-12 order-${index}`" >
+        <img class="w-1/3" :src="item" />
+        <div class="w-3/4 h-24 diamond-shadow -mt-16"></div>
       </div>
     </div>
   </div>
@@ -61,15 +61,12 @@ export default {
 }
 .slides::-webkit-scrollbar {
   height: 2px;
-  display: none;
 }
 .slides::-webkit-scrollbar-thumb {
   @apply bg-cm-blue;
-  display: none;
 }
 .slides::-webkit-scrollbar-track {
   @apply bg-cm-grey;
-  display: none;
 }
 .slides > div {  
   scroll-snap-align: start;

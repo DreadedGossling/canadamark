@@ -27,66 +27,57 @@
         <span class="w-52 text-center">Jewelry & Design</span>
       </div>
     </div>
-    <div class="max-w-5xl rounded box-shadow my-8 mx-auto">
-      <div class="w-full p-4 font-light text-cm-dark-blue text-center">
-        <h3 class="text-2xl">True luxury is feeling good about your choices.</h3>
-      </div>
-      <div class="bg-cm-dark-blue text-white p-10">
+    <div class="max-w-3xl certificate text-white rounded box-shadow my-8 mx-auto">
+      <div class="p-10 pb-4">
+        <div class="topline mx-auto mb-10"></div>
         <div class="grid grid-cols-3 gap-1 justify-evenly">
-          <div class="flex flex-col justify-center">
+          <div class="flex flex-col justify-center text22">
             <div>
-              <p class="text22">MINE OF ORIGIN</p>
-              <p>Ekati/Diavik</p>
+              <p class="font-bold">GIA</p>
+              <p>{{ gia }}</p>
             </div>
             <div class="my-6">
-              <p class="text22">GI NUMBER</p>
-              <p>5393302835</p>
-            </div>
-            <div>
-              <p class="text22">POLISHED WEIGHT</p>
-              <p>0.7</p>
+              <p class="font-bold">COLOR</p>
+              <p>{{ color }}</p>
             </div>
           </div>
-          <div class="flex flex-col justify-center">
+          <div class="flex flex-col justify-center text-center text22">
             <div>
-              <p class="text22">COLOR GRADE</p>
-              <p>F</p>
+              <p class="font-bold">SERIAL NUMBER</p>
+              <p>{{ cmNumber }}</p>
             </div>
             <div class="my-6">
-              <p class="text22">CUT</p>
-              <p>Round</p>
-            </div>
-            <div>
-              <p class="text22">CLARITY GRADE</p>
-              <p>S12</p>
+              <p class="font-bold">CUT</p>
+              <p>{{ cut }}</p>
             </div>
           </div>
-          <div class="h-full">
-            <div class="flex flex-col justify-between items-center ml-auto">
-            <svg width="190" height="189" viewBox="0 0 190 189" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2.48926 79.3063L101.249 66.45M101.249 66.45L186.275 76.3844M101.249 66.45L39.0127 19.7M101.249 66.45L157.641 26.1281M185.399 118.751L94.8206 129.855M94.8206 129.855L2.48926 117.875M94.8206 129.855L104.755 186.831M94.8206 129.855L87.5158 186.831M188.028 94.5C188.028 146.139 146.167 188 94.5283 188C42.8897 188 1.02832 146.139 1.02832 94.5C1.02832 42.8614 42.8897 1 94.5283 1C146.167 1 188.028 42.8614 188.028 94.5Z" stroke="white" stroke-width="2"/>
-            <text x="95" y="105" text-anchor="middle" fill="white" font-size="24">CM-392682</text>
-            </svg>
-            <svg class="mt-8" width="221" height="144" viewBox="0 0 221 144" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M73.4818 9.72178L36.4209 5.36774L73.4818 1H147.574L184.621 5.36774L147.574 9.72178H73.4818Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M220.057 32.3423L165.286 38.784H55.7571L1 32.3423" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M184.621 5.36768L220.057 32.3434L110.529 142.979L1 32.3434L36.4216 5.36768" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M147.576 9.72119L165.287 38.7846L110.529 142.979L55.7578 38.7846L73.4832 9.72119" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M125.576 9.72162L165.286 38.785L169.969 7.08447L192.672 35.571L110.529 142.979L28.3857 35.571L48.9654 7.08447L55.757 38.785L91.4127 9.72162L83.1282 38.785L110.529 142.979" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M108.493 9.72119L110.528 142.979L136.787 38.7846L125.575 9.72119L108.493 38.7846L91.4121 9.72119" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M220.057 32.3433L169.969 7.08447" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M1 32.3433L48.9655 7.08447" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-
+          <div class="flex flex-col justify-center text-right text22">
+            <div>
+              <p class="font-bold">CARAT</p>
+              <p>{{ carat }}</p>
+            </div>
+            <div class="my-6">
+              <p class="font-bold">CLARITY</p>
+              <p>{{ clarity }}</p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="w-full p-4 text-cm-dark-blue text-center">
-        <svg class="mx-auto" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.2975 9.80947L9.49316 13.7212L13.2989 17.6315L17.1032 13.7198L13.2975 9.80947Z" fill="#191F1E"/>
-          <path d="M13.2468 22.0257L5.06105 13.6134L13.2468 5.20115V0L0 13.6134L13.2468 27.2269V22.0257Z" fill="#191F1E"/>
-        </svg>
+        <div class="certificate-bottom flex items-end mt-20">
+          <div class="align">
+          <svg width="21" height="32" viewBox="0 0 21 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_1505:1673)">
+          <path d="M16.0866 11.6559L11.4844 16.2605L16.0882 20.8635L20.6903 16.2589L16.0866 11.6559Z" fill="white"/>
+          <path d="M16.0247 26.0359L6.1224 16.1336L16.0247 6.23128V0.108887L0 16.1336L16.0247 32.1583V26.0359Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_1505:1673">
+          <rect width="20.565" height="31.7823" fill="white" transform="translate(0 0.108887)"/>
+          </clipPath>
+          </defs>
+          </svg>
+          </div>
+          <h6 class="text-center mx-4">Canadamark is our assurance that your diamond is of geniune canadian origin and is natural and untreated. For more information, visit wwww.canadamark.com.</h6>
+        </div>
       </div>
     </div>
     <div class="flex flex-col items-center justify-between p-6 text-center my-8">
@@ -109,14 +100,67 @@
   p {
     font-size: 36px;
   }
-  .text22 {
-    font-size: 22px;
+  .text22 p{
+    font-size: 24px;
     line-height: 1.125;
   }
   .box-shadow {
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
   }
+
+  .certificate {
+    background: #3B455B;
+    border-radius: 1rem;
+  }
+
+  .certificate .topline {
+    background: #636C7B;
+    height: 4px;
+    width: 90%;
+  }
+
+  .certificate-bottom {
+    font-size: 12px;
+  }
 </style>
 <script>
-export default {}
+import axios from 'axios';
+export default {
+  watch: {
+    $route() {
+      console.log(this.$route.query)
+      this.query = this.$route.query.q
+      this.searchDiamond(this.query)
+    }
+  },
+  data(){
+    return {
+      query: this.$route.query.q,
+      cmNumber: ' ',
+      gia: ' ',
+      carat: ' ',
+      color: ' ',
+      cut: ' ',
+      clarity: ' ',
+    }
+  },
+  methods: {
+    searchDiamond(query){
+      axios.get("https://portal.canadamark.com/api/v1/diamond/"+query).then(res => {
+        console.log(res)
+        this.cmNumber = res.data.cm_number
+        this.gia = res.data.cert_number || 'N/A'
+        this.carat = res.data.polished_weight || 'N/A'
+        this.color = res.data.colour || 'N/A'
+        this.cut = res.data.shape || 'N/A'
+        this.clarity = res.data.clarity || 'N/A'
+      }).catch(err => {
+        console.log(err)
+      })
+    }
+  },
+  mounted() {
+    this.searchDiamond(this.query)
+  },
+}
 </script>

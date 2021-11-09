@@ -14,21 +14,21 @@
             <div class="flex flex-col justify-center">
               <div>
                 <p class="text22">MINE OF ORIGIN</p>
-                <p>Ekati/Diavik</p>
+                <p>{{mine}}</p>
               </div>
               <div class="my-6">
                 <p class="text22">NUMBER OF POLISHED STONES</p>
-                <p>16</p>
+                <p>{{diamondCount}}</p>
               </div>
               <div>
                 <p class="text22">TOTAL WEIGHT</p>
-                <p>0.41</p>
+                <p>{{weight}}</p>
               </div>
             </div>
             <div class="flex flex-col justify-between items-center ml-auto">
               <svg width="190" height="189" viewBox="0 0 190 189" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.48926 79.3063L101.249 66.45M101.249 66.45L186.275 76.3844M101.249 66.45L39.0127 19.7M101.249 66.45L157.641 26.1281M185.399 118.751L94.8206 129.855M94.8206 129.855L2.48926 117.875M94.8206 129.855L104.755 186.831M94.8206 129.855L87.5158 186.831M188.028 94.5C188.028 146.139 146.167 188 94.5283 188C42.8897 188 1.02832 146.139 1.02832 94.5C1.02832 42.8614 42.8897 1 94.5283 1C146.167 1 188.028 42.8614 188.028 94.5Z" stroke="white" stroke-width="2"/>
-              <text x="95" y="105" text-anchor="middle" fill="white" font-size="24">CMJ-10006773</text>
+              <text x="95" y="105" text-anchor="middle" fill="white" font-size="24">{{cmjNumber}}</text>
               </svg>
               <svg class="mt-8" width="221" height="144" viewBox="0 0 221 144" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M73.4818 9.72178L36.4209 5.36774L73.4818 1H147.574L184.621 5.36774L147.574 9.72178H73.4818Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -50,7 +50,7 @@
           </svg>
         </div>
       </div>
-      <img class="h-full" src="/images/jewellery.png" alt="">
+      <img class="h-full" :src="image_url" alt="">
     </div>
   </div>
 </template>
@@ -79,5 +79,41 @@
   }
 </style>
 <script>
-export default {}
+import axios from 'axios';
+export default {
+  watch: {
+    $route() {
+      console.log(this.$route.query)
+      this.query = this.$route.query.q
+      this.searchJewelry(this.query)
+    }
+  },
+  data(){
+    return {
+      query: this.$route.query.q,
+      mine: '',
+      cmjNumber: ' ',
+      diamondCount: ' ',
+      weight: ' ',
+      image_url: ' ',
+    }
+  },
+  methods: {
+    searchJewelry(query){
+      axios.get("https://portal.canadamark.com/api/v1/jewellery/"+query).then(res => {
+        console.log(res)
+        this.mine = res.data.mine
+        this.cmjNumber = res.data.cmj_number
+        this.diamondCount = res.data.diamond_count || 'N/A'
+        this.weight = res.data.total_weight || 'N/A'
+        this.image_url = res.data.image_url
+      }).catch(err => {
+        console.log(err)
+      })
+    }
+  },
+  mounted() {
+    this.searchJewelry(this.query)
+  },
+}
 </script>

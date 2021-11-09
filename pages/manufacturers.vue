@@ -27,7 +27,7 @@
   .top-section {
     background-image: url('/images/jewelry-manufacturers.jpg');
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     height: 550px;
     position: relative;
