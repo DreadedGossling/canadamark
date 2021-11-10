@@ -14,11 +14,11 @@ export default {
   data(){
     return {
       imageSrcs: [
-        '/images/oval.png',
-        '/images/pear.png',
-        '/images/princess.png',
-        '/images/marquise.png',
-        '/images/round.png',
+        '/images/OVAL.png',
+        '/images/PEAR.png',
+        '/images/PRINCESS.png',
+        '/images/MARQUISE.png',
+        '/images/EMERALD.png',
       ]
     }
   },
