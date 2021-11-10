@@ -4,27 +4,24 @@
       <h1 class="max-w-6xl font-sanomat">Summary</h1>
       <p class="max-w-6xl my-4">Your Diamond’s Birth Certificate</p>
     </div>
-    <div class="flex flex-col">
-      <div class="flex mx-auto items-center">
-        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/sourcing.png" alt="" />
-        <div class="h-px w-28 border-2 border-cm-pantone"></div>
-        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/sorting.png" alt="" />
-        <div class="h-px w-28 border-2 border-cm-pantone"></div>
-        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/cutting.png" alt="" />
-        <div class="h-px w-28 border-2 border-cm-pantone"></div>
-        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/selection.png" alt="" />
-        <div class="h-px w-28 border-2 border-cm-pantone"></div>
-        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/inscription.png" alt="" />
-        <div class="h-px w-28 border-2 border-cm-pantone"></div>
-        <img class="border-4 border-cm-pantone rounded-full h-24 w-24" src="/images/thumb/jewellery.png" alt="" />
-      </div>
-      <div class="flex mx-auto my-4">
-        <span class="w-52 text-center">Sourcing</span>
-        <span class="w-52 text-center">Sorting</span>
-        <span class="w-52 text-center">Cutting & Polishing</span>
-        <span class="w-52 text-center">Selection & Grading</span>
-        <span class="w-52 text-center">Inscription</span>
-        <span class="w-52 text-center">Jewelry & Design</span>
+    <div class="flex flex-col px-24 mb-24">
+      <div class="flex items-center">
+        <step name="Sourcing" imageUrl="/images/sourcing.png" thumbUrl="/images/thumb/sourcing.png" />
+        <div class="h-px flex-grow border-2 border-cm-pantone"></div>
+
+        <step name="Sorting" imageUrl="/images//sorting.png" thumbUrl="/images/thumb/sorting.png" />
+        <div class="h-px flex-grow border-2 border-cm-pantone"></div>
+
+        <step name="Cutting & Polishing" imageUrl="/images/cutting.png" thumbUrl="/images/thumb/cutting.png" />
+        <div class="h-px flex-grow border-2 border-cm-pantone"></div>
+
+        <step name="Selection & Grading" imageUrl="/images/selection.png" thumbUrl="/images/thumb/selection.png" />
+        <div class="h-px flex-grow border-2 border-cm-pantone"></div>
+
+        <step name="Inscription" imageUrl="/images/inscription.png" thumbUrl="/images/thumb/inscription.png" />        
+        <div class="h-px flex-grow border-2 border-cm-pantone"></div>
+
+        <step name="Jewelry & Design" imageUrl="/images/jewellery02.png" thumbUrl="/images/thumb/jewellery.png" />    
       </div>
     </div>
     <div class="max-w-3xl certificate text-white rounded box-shadow my-8 mx-auto">
@@ -156,7 +153,7 @@ export default {
       }).catch(err => {
         console.log(err)
       })
-    }
+    },
   },
   mounted() {
     this.searchDiamond(this.query)
