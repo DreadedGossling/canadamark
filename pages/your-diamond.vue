@@ -61,7 +61,7 @@
     height: 748px;
   }
   .bg-bridal {
-    background-image: url('/images/bridal-jewellery.png');
+    background-image: url('/images/bridal-jewellery.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
