@@ -14,14 +14,14 @@
       <h1 class="max-w-6xl text-cm-blue mb-12 font-sanomat text-2xl md:text-6xl">Our Diamonds</h1>
       <image-slider />
     </div>
-    <div class="max-w-6xl grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-0 p-6 my-8 mx-auto">
-      <div class="order-1 md:order-0 -mt-20 md:mt-0"><img class="h-auto md:h-full w-full md:w-auto" src="/images/engagement.png" alt=""></div>
-      <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-4/5 w-4/5 md:w-auto m-auto md:-ml-12 px-12 order-0 md:order-1 z-10">
+    <div class="max-w-6xl grid grid-rows-auto md:grid-rows-1 md:grid-cols-2 gap-0 p-6 my-8 mx-auto">
+      <div class="order-1 md:order-0 -mt-10 md:mt-0"><img class="h-auto md:h-full w-full md:w-auto" src="/images/engagement.png" alt=""></div>
+      <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-auto md:h-4/5 w-4/5 md:w-auto m-auto md:-ml-12 p-12 order-0 md:order-1 z-10">
         <h1 class="font-sanomat leading-none mb-8 text-2xl md:text-6xl">Ethics</h1>
         <p class="text-center text-sm md:text-2xl font-ddin leading-tight">Responsible mining means improving lives, strengthening communities, protecting wildlife, and respecting the environment in which we operate.</p>
       </div>
     </div>    
-    <div class="max-w-6xl grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-0 p-6 my-8 mx-auto">
+    <div class="max-w-6xl grid grid-rows-auto md:grid-rows-1 md:grid-cols-2 gap-0 p-6 my-8 mx-auto">
       <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-auto py-10 md:py-0 md:h-4/5 w-4/5 md:w-auto m-auto px-12 z-10">
         <h1 class="font-sanomat leading-none mb-8 text-2xl md:text-6xl">Authenticity</h1>
         <p class="text-center text-sm md:text-2xl mb-4 font-ddin leading-tight">Each Canadamark certified diamond comes with an assurance that your diamond is authentically Canadian.</p>

@@ -55,7 +55,7 @@
       </div>
 
       <div class="flex justify-end">
-        <input v-model="searchQuery" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-1 md:px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry" @change="performSearch" >
+        <input v-model="searchQuery" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-1 md:px-3 text-white leading-tight focus:outline-none focus:shadow-outline rounded-none" type="search" placeholder="Search Your Diamond/Jewelry" @change="performSearch" >
         <button class="border border-white border-l-0 px-1 md:px-2 w-7 md:w-9" @click="performSearch">
           <svg width="95%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
