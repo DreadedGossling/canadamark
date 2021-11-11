@@ -3,11 +3,11 @@
       
   <nav id="navigation" class="bg-cm-black sticky top-0 z-40 font-body transition-all duration-500">
     <!-- Container to give Navbar a fixed width -->
-    <div class="flex mx-2 items-center justify-between flex-wrap p-4">
+    <div class="flex mx-2 items-center justify-between py-2 md:p-4">
         
       <!-- Logo Icon -->
       <NuxtLink to="/" class="flex items-center flex-no-shrink">
-        <svg width="127" height="45" viewBox="0 0 127 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-16 md:w-24" width="100%" viewBox="0 0 127 45" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_1286:658)">
             <path d="M22.1143 16.6768L15.7876 23.0068L22.1165 29.3346L28.4432 23.0046L22.1143 16.6768Z" fill="white"/>
             <path d="M22.0295 36.4451L8.41657 22.8322L22.0295 9.2193V0.802734L0 22.8322L22.0295 44.8616V36.4451Z" fill="white"/>
@@ -40,10 +40,30 @@
           </defs>
         </svg>
       </NuxtLink>
-      <div class="mx-2"></div>
-      <a href="https://arcticcanadian.ca" class="flex items-center flex-no-shrink">
+      <a href="https://arcticcanadian.ca" class="hidden md:flex items-center flex-no-shrink ml-2">
         <img src="/images/acdc-logo.jpg" width="126" alt="">
       </a>  
+        
+      <!-- Items of collapsible menu -->
+      <div :class="{ hidden: !isVisible }" class="menu absolute md:relative top-12 md:top-0 text-sm md:text-base right-0 text-white font-sanomat hover:text-white justify-center flex-grow md:flex md:items-center md:w-auto md:ml-10 bg-cm-black w-3/4">
+        <span v-for="item in navItems" :key="item.name" class="flex flex-row mt-4 pl-2 md:pl-0 md:mt-0 md:mr-6 border-b md:border-0"> <NuxtLink :to="item.link" class="flex items-center no-underline flex-row" @click.native="toggleVisibility" >
+          <component :is="item.icon" class="w-5 h-5 mr-2 ml-1" /> {{ item.name }} </NuxtLink>
+        </span>
+        <a class="flex items-center no-underline flex-row mt-4 pl-2 md:pl-0 md:mt-0 border-b md:border-0" @click.prevent="goToContact">
+          Contact
+        </a>
+      </div>
+
+      <div class="flex justify-end">
+        <input v-model="searchQuery" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-1 md:px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry" @change="performSearch" >
+        <button class="border border-white border-l-0 px-1 md:px-2 w-7 md:w-9" @click="performSearch">
+          <svg width="95%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M20.9999 20.9999L16.6499 16.6499" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>          
+        </button>
+      </div>
+
       <!-- Collapsable Menu Button - if one is active other is not. -->
       <div class="block md:hidden">
         <button type="button" class="inline-flex items-center justify-center p-1 text-white focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" @click="toggleVisibility">
@@ -60,26 +80,7 @@
           </svg>
         </button>
       </div>
-        
-      <!-- Items of collapsible menu -->
-      <div :class="{ hidden: !isVisible }" class="text-white font-sanomat hover:text-white justify-center flex-grow md:flex md:items-center md:w-auto md:ml-10">
-        <span v-for="item in navItems" :key="item.name" class="flex flex-row mt-6 md:mt-0 mr-6"> <NuxtLink :to="item.link" class="flex items-center no-underline flex-row" @click.native="toggleVisibility" >
-          <component :is="item.icon" class="w-5 h-5 mr-2 ml-1" /> {{ item.name }} </NuxtLink>
-        </span>
-        <a class="flex items-center no-underline flex-row" @click.prevent="goToContact">
-          Contact
-        </a>
 
-      </div>
-      <div class="flex justify-end">
-        <input v-model="searchQuery" class="search-box bg-transparent font-ddin shadow appearance-none border border-white py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline" type="search" placeholder="Search Your Diamond/Jewelry" @change="performSearch" >
-        <button class="border border-white border-l-0 px-2" @click="performSearch">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M20.9999 20.9999L16.6499 16.6499" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>          
-        </button>
-      </div>
     </div>
   </nav>
 </template>
@@ -141,9 +142,22 @@ export default {
 </script>
 
 <style scoped>
-.search-box{
-  width: 240px
-}
+  @media only screen and (max-width: 767px) {
+    .search-box{
+      width: 170px;
+      font-size: 12px;
+    }
+    .menu {
+      height: 70vh;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .search-box{
+      width: 225px;
+      font-size: 15px;
+    }
+  }
+
 a {
   cursor: pointer;
 }

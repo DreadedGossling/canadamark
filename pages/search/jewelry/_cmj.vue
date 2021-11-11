@@ -1,36 +1,36 @@
 <template>
   <div>
     <div class=" text-cm-black flex flex-col items-center justify-between p-6 text-center my-4 font-ddin leading-tight">
-      <h1 class="max-w-6xl font-sanomat">Summary</h1>
-      <p class="max-w-6xl my-4">Your Jewellery Certificate</p>
+      <h1 class="max-w-6xl font-sanomat text-3xl md:text-6xl">Summary</h1>
+      <p class="max-w-6xl my-4 text-xl sm:text-2xl md:text-4xl">Your Jewellery Certificate</p>
     </div>
-    <div class="flex justify-center items-center">
-      <div class="max-w-3xl rounded box-shadow my-8">
-        <div class="w-full p-4 text-cm-dark-blue text-center">
-          <h3 class="text-2xl">True luxury is feeling good about your choices.</h3>
+    <div class="flex flex-col md:flex-row justify-center items-center mx-4 md:mx-0">
+      <div class="max-w-3xl rounded box-shadow mb-8 md:my-8">
+        <div class="w-full p-2 md:p-4 text-cm-dark-blue text-center">
+          <h3 class="text-sm md:text-2xl">True luxury is feeling good about your choices.</h3>
         </div>
-        <div class="bg-cm-dark-blue text-white p-10">
+        <div class="bg-cm-dark-blue text-white p-3 md:p-10">
           <div class="grid grid-cols-2 gap-1 justify-evenly">
             <div class="flex flex-col justify-center">
               <div>
                 <p class="text22">MINE OF ORIGIN</p>
-                <p>{{mine}}</p>
+                <p class="text-base md:text-3xl">{{mine}}</p>
               </div>
               <div class="my-6">
                 <p class="text22">NUMBER OF POLISHED STONES</p>
-                <p>{{diamondCount}}</p>
+                <p class="text-base md:text-3xl">{{diamondCount}}</p>
               </div>
               <div>
                 <p class="text22">TOTAL WEIGHT</p>
-                <p>{{weight}}</p>
+                <p class="text-base md:text-3xl">{{weight}}</p>
               </div>
             </div>
             <div class="flex flex-col justify-between items-center ml-auto">
-              <svg width="190" height="189" viewBox="0 0 190 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="50%" viewBox="0 0 190 189" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2.48926 79.3063L101.249 66.45M101.249 66.45L186.275 76.3844M101.249 66.45L39.0127 19.7M101.249 66.45L157.641 26.1281M185.399 118.751L94.8206 129.855M94.8206 129.855L2.48926 117.875M94.8206 129.855L104.755 186.831M94.8206 129.855L87.5158 186.831M188.028 94.5C188.028 146.139 146.167 188 94.5283 188C42.8897 188 1.02832 146.139 1.02832 94.5C1.02832 42.8614 42.8897 1 94.5283 1C146.167 1 188.028 42.8614 188.028 94.5Z" stroke="white" stroke-width="2"/>
               <text x="95" y="105" text-anchor="middle" fill="white" font-size="24">{{cmjNumber}}</text>
               </svg>
-              <svg class="mt-8" width="221" height="144" viewBox="0 0 221 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="mt-8" width="50%" viewBox="0 0 221 144" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M73.4818 9.72178L36.4209 5.36774L73.4818 1H147.574L184.621 5.36774L147.574 9.72178H73.4818Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M220.057 32.3423L165.286 38.784H55.7571L1 32.3423" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M184.621 5.36768L220.057 32.3434L110.529 142.979L1 32.3434L36.4216 5.36768" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="w-full p-4 text-cm-dark-blue text-center">
+        <div class="w-full p-2 md:p-4 text-cm-dark-blue text-center">
           <svg class="mx-auto" width="17" height="27" viewBox="0 0 17 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M13.2975 9.80947L9.49316 13.7212L13.2989 17.6315L17.1032 13.7198L13.2975 9.80947Z" fill="#191F1E"/>
             <path d="M13.2468 22.0257L5.06105 13.6134L13.2468 5.20115V0L0 13.6134L13.2468 27.2269V22.0257Z" fill="#191F1E"/>
@@ -62,18 +62,20 @@
     height: 550px;
     position: relative;
   }
-  h1 {
-    font-size: 64px;
+  @media only screen and (min-width: 768px) {
+    .text22 {
+      font-size: 22px;
+      line-height: 1.125;
+    }
   }
 
-  p {
-    font-size: 36px;
+  @media only screen and (max-width: 767px) {
+    .text22 {
+      font-size: 12px;
+      line-height: 1.125;
+    }
   }
 
-  .text22 {
-    font-size: 22px;
-    line-height: 1.125;
-  }
   .box-shadow {
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
   }

@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-between m-8">
-    <svg width="151" height="99" viewBox="0 0 151 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="flex flex-col justify-between m-8 w-1/3">
+    <svg width="100%" viewBox="0 0 151 99" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M50.0295 6.95872L24.7095 3.98404L50.0295 1H100.649L125.959 3.98404L100.649 6.95872H50.0295Z" stroke="#677F91" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M150.17 22.4131L112.75 26.8141H37.9198L0.509766 22.4131" stroke="#677F91" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M125.96 3.98389L150.17 22.4137L75.3398 98.0001L0.509766 22.4137L24.7098 3.98389" stroke="#677F91" stroke-linecap="round" stroke-linejoin="round"/>

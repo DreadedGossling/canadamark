@@ -1,10 +1,10 @@
 <template>
   <div>
     <div class=" text-cm-black flex flex-col items-center justify-between p-6 text-center my-8 font-ddin leading-tight">
-      <h1 class="max-w-6xl font-sanomat">Summary</h1>
-      <p class="max-w-6xl my-4">Your Diamond’s Birth Certificate</p>
+      <h1 class="max-w-6xl font-sanomat text-3xl md:text-6xl">Summary</h1>
+      <p class="max-w-6xl my-4 text-xl sm:text-2xl md:text-4xl">Your Diamond’s Birth Certificate</p>
     </div>
-    <div class="flex flex-col px-24 mb-24">
+    <div class="hidden md:flex flex-col px-24 mb-24">
       <div class="flex items-center">
         <step name="Sourcing" imageUrl="/images/sourcing.png" thumbUrl="/images/thumb/sourcing.png" />
         <div class="h-px flex-grow border-2 border-cm-pantone"></div>
@@ -24,9 +24,9 @@
         <step name="Jewelry & Design" imageUrl="/images/jewellery02.png" thumbUrl="/images/thumb/jewellery.png" />    
       </div>
     </div>
-    <div class="max-w-3xl certificate text-white rounded box-shadow my-8 mx-auto">
-      <div class="p-10 pb-4">
-        <div class="topline mx-auto mb-10"></div>
+    <div class="max-w-3xl certificate text-white rounded box-shadow my-8 mx-4 sm:mx-10 md:mx-auto ">
+      <div class="p-3 pt-4 md:p-10 md:pb-4">
+        <div class="topline mx-auto mb-4 md:mb-10"></div>
         <div class="grid grid-cols-3 gap-1 justify-evenly">
           <div class="flex flex-col justify-center text22">
             <div>
@@ -59,7 +59,7 @@
             </div>
           </div>
         </div>
-        <div class="certificate-bottom flex items-end mt-20">
+        <div class="certificate-bottom flex items-end mt-4 md:mt-20">
           <div class="align">
           <svg width="21" height="32" viewBox="0 0 21 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_1505:1673)">
@@ -73,12 +73,12 @@
           </defs>
           </svg>
           </div>
-          <h6 class="text-center mx-4">Canadamark is our assurance that your diamond is of geniune canadian origin and is natural and untreated. For more information, visit wwww.canadamark.com.</h6>
+          <h6 class="text-center mx-4 assurance">Canadamark is our assurance that your diamond is of geniune canadian origin and is natural and untreated. For more information, visit wwww.canadamark.com.</h6>
         </div>
       </div>
     </div>
     <div class="flex flex-col items-center justify-between p-6 text-center my-8">
-      <h1 class="text-cm-black mb-12">Our Journey</h1>
+      <h1 class="text-cm-black mb-12 text-2xl md:text-6xl">Our Journey</h1>
       <video src="/videos/canadamark.mp4" autoplay loop playsinline muted></video>
     </div>
   </div>
@@ -91,16 +91,27 @@
     height: 550px;
     position: relative;
   }
-  h1 {
-    font-size: 64px;
+
+  @media only screen and (min-width: 768px) {
+    .text22 p{
+      font-size: 24px;
+      line-height: 1.125;
+    }
+    .assurance {
+      font-size: 12px;
+    }
   }
-  p {
-    font-size: 36px;
+
+  @media only screen and (max-width: 767px) {
+    .text22 p{
+      font-size: 12px;
+      line-height: 1.125;
+    }
+    .assurance {
+      font-size: 8px;
+    }
   }
-  .text22 p{
-    font-size: 24px;
-    line-height: 1.125;
-  }
+
   .box-shadow {
     box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.1);
   }
