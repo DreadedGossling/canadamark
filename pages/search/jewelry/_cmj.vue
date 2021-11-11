@@ -101,7 +101,7 @@ export default {
   },
   methods: {
     searchJewelry(query){
-      axios.get("https://portal.canadamark.com/api/v1/jewellery/"+query).then(res => {
+      axios.get("https://portal.canadamark.com/api/v1/jewellery/"+query.toUpperCase()).then(res => {
         console.log(res)
         this.mine = res.data.mine
         this.cmjNumber = res.data.cmj_number

@@ -1,5 +1,5 @@
 <template lang="pug">
-    div
+    div.overflow-x-hidden
         cm-header
         nuxt
         cm-footer

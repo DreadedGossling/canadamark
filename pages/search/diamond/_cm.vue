@@ -153,7 +153,7 @@ export default {
   },
   methods: {
     searchDiamond(query){
-      axios.get("https://portal.canadamark.com/api/v1/diamond/"+query).then(res => {
+      axios.get("https://portal.canadamark.com/api/v1/diamond/"+query.toUpperCase()).then(res => {
         console.log(res)
         this.cmNumber = res.data.cm_number
         this.gia = res.data.cert_number || 'N/A'
