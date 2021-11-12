@@ -15,12 +15,15 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'preload', as: 'font', href: '/fonts/Sanomat-Web-Regular-Regular.ttf', crossorigin: "anonymous" },
+      { rel: 'preload', as: 'font', href: '/fonts/D-Din-Regular.ttf', crossorigin: "anonymous" },
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    './assets/css/tailwind.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
