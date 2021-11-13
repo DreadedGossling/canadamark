@@ -9,7 +9,7 @@
         <step name="Sourcing" imageUrl="/images/sourcing.png" thumbUrl="/images/thumb/sourcing.png" />
         <div class="h-px flex-grow border-2 border-cm-pantone"></div>
 
-        <step name="Sorting" imageUrl="/images//sorting.png" thumbUrl="/images/thumb/sorting.png" />
+        <step name="Sorting" imageUrl="/images/sorting.png" thumbUrl="/images/thumb/sorting.png" />
         <div class="h-px flex-grow border-2 border-cm-pantone"></div>
 
         <step name="Cutting & Polishing" imageUrl="/images/cutting.png" thumbUrl="/images/thumb/cutting.png" />
