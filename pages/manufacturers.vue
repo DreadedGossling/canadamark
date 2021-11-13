@@ -46,7 +46,7 @@
 export default {
   data(){
     const jewellery = [
-      {name: 'Mahendra Brothers Exports Pvt. Ltd / UNIDESIGN', emails: ['rishi@mahendrabrothers.com'], url: 'https://mahendrabrothers.com', phone: '+91 22 6661 5600'},
+      {name: 'Mahendra Brothers Exports Pvt. Ltd / Unidesign', emails: ['rishi@mahendrabrothers.com'], url: 'https://mahendrabrothers.com', phone: '+91 22 6661 5600'},
       {name: 'Corona Jewellery Company Ltd.', emails: ['mike@coronajewellery.com'], url: 'http://www.coronajewellery.com/', phone: '+1 416 7622222'}]
     const diamond = [
       {name: 'Singh Diamonds', emails: ['karan@singhdiamonds.com', 'info@singhdiamonds.com'], url: 'http://www.singhdiamonds.com/', phone: '+91 22 26754675'},
