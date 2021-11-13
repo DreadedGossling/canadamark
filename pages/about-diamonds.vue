@@ -12,8 +12,8 @@
     </div>
     <div class="max-w-6xl grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-0 py-0 md:p-6 my-0 md:my-8 mx-auto h-700px">
       <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-auto py-10 md:py-0 md:h-4/5 w-4/5 md:w-auto m-auto px-12 z-10">
-        <h1 class="font-sanomat text-2xl md:text-6xl">The 4C’s</h1>
-        <p class="text-center font-ddin leading-tight text-sm md:text-2xl">Diamonds are evaluated for carat weight, color grade, clarity grade and cut grade. This ranking standard is known as the 4Cs of Diamond Quality.</p>
+        <h1 class="font-sanomat text-2xl md:text-6xl mb-4">The 4C’s</h1>
+        <p class="text-center font-ddin leading-tight md:leading-tight text-sm md:text-2xl">Diamonds are evaluated for carat weight, color grade, clarity grade and cut grade. This ranking standard is known as the 4Cs of Diamond Quality.</p>
       </div>
       <div class="bg-4c h-full w-auto -mt-32 md:mt-0 md:-ml-12"></div>
     </div>

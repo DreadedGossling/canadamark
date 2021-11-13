@@ -5,16 +5,16 @@
       <p class="mb-12 max-w-6xl text-center font-ddin leading-tight p-4 text-sm md:text-2xl">Before you hold your Canadamark diamond, a team of passionate professionals responsibly mine it, bring out its beauty, and ensure that it’s authentically Canadian. We want you to focus on your diamond’s artistry and be proud to wear it without second guessing its history.</p>
     </div>
     <div class="max-w-6xl grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 gap-0 py-0 md:p-6 mt-6 md:my-8 mx-auto h-700px two-section p-6">
-      <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-auto py-10 md:py-0 md:h-4/5 w-4/5 md:w-auto m-auto px-12 z-10">
+      <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-auto py-10 md:py-4 md:h-4/5 w-4/5 md:w-auto m-auto px-12 z-10">
         <h1 class="font-sanomat text-2xl md:text-6xl">Origin</h1>
-        <p class="text-center text24 mt-8 mb-4 font-bold font-ddin leading-tight text-sm md:text-2xl">THE NORTHWEST TERRITORIES</p>
-        <p class="text-center text24 font-ddin leading-tight md:leading-tight text-sm md:text-2xl mb-4">Your diamond comes from the Ekati, Diavik, and Gahcho Kué mines in Canada’s pristine North, about 200 kilometres south of the Arctic circle. With preferential hiring practices and training programs for northern residents, indigenous-led wildlife monitoring programs, and industry-leading water recycling and composting systems, these mines are at the forefront of community engagement, environmental stewardship and waste management practices.</p>
-        <p>
-          <svg class="w-6 md:w-8 inline" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <p class="text-center text24 mt-8 mb-4 font-bold font-ddin leading-tight text-sm md:text-2xl">{{mineName}}</p>
+        <p class="text-center text24 font-ddin leading-tight md:leading-tight text-sm md:text-2xl mb-4">{{mineText}}</p>
+        <p class="mt-auto">
+          <svg class="w-6 md:w-8 inline cursor-pointer" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" @click="prevMine()">
           <path d="M18.123 8.17383L14.123 16.1738L18.123 24.1738" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <span class="font-ddin text-sm md:text-2xl align-middle">1/3</span>
-          <svg class="w-6 md:w-8 inline transform rotate-180" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="font-ddin text-sm md:text-2xl align-middle">{{mineIndex+1}}/{{mines.length}}</span>
+          <svg class="w-6 md:w-8 inline transform rotate-180 cursor-pointer" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" @click="nextMine()">
           <path d="M18.123 8.17383L14.123 16.1738L18.123 24.1738" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </p>
@@ -76,5 +76,42 @@
   }
 </style>
 <script>
-export default {}
+export default {
+  data(){
+    return {
+      mineIndex: 0,
+      mines: ['THE NORTHWEST TERRITORIES', 'GOVERNMENT REGULATIONS', 'KIMBERLITE PIPES'],
+      minesDesc: [
+        'Your diamond comes from the Ekati, Diavik, and Gahcho Kué mines in Canada’s pristine North, about 200 kilometres south of the Arctic circle. With preferential hiring practices and training programs for northern residents, indigenous-led wildlife monitoring programs, and industry-leading water recycling and composting systems, these mines are at the forefront of community engagement, environmental stewardship and waste management practices.',
+        'Mining in Canada is governed by more stringent regulations than other countries. Federal, territorial, First Nations agreements — they’re all in place to protect Canada’s environment and its people. All mines that are part of the Canadamark program must meet Canada’s stringent environmental regulations, and many go above and beyond.',
+        'Rough diamonds are found in kimberlite pipes, which were formed in the magma of the Earth’s mantle billions of year ago then forced up in volcanic eruptions. While more than 2,000 kimberlite pipes have been discovered around the world, only a couple dozen are worthy to be mined.']
+    }
+  },
+  methods: {
+    prevMine(){
+      const minesCount = this.mines.length
+      if (this.mineIndex === 0)
+        this.mineIndex = minesCount - 1
+      else
+        this.mineIndex -= 1
+        
+      console.log(this.mineIndex)
+    },
+    nextMine(){
+      const minesCount = this.mines.length
+      if (this.mineIndex === minesCount - 1)
+        this.mineIndex = 0
+      else
+        this.mineIndex += 1 
+    }
+  },
+  computed: {
+    mineName(){
+      return this.mines[this.mineIndex]
+    },
+    mineText(){
+      return this.minesDesc[this.mineIndex]
+    }
+  },
+}
 </script>
