@@ -18,17 +18,17 @@
       <div class="order-1 md:order-0 -mt-10 md:mt-0"><img class="h-auto md:h-full w-full md:w-auto" src="/images/engagement.png" alt=""></div>
       <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-auto md:h-4/5 w-4/5 md:w-auto m-auto md:-ml-12 p-12 order-0 md:order-1 z-10">
         <h1 class="font-sanomat leading-none mb-8 text-2xl md:text-6xl">Ethics</h1>
-        <p class="text-center text-sm md:text-2xl font-ddin leading-tight">Responsible mining means improving lives, strengthening communities, protecting wildlife, and respecting the environment in which we operate.</p>
+        <p class="text-center text-sm md:text-2xl font-ddin leading-tight md:leading-tighter">Responsible mining means improving lives, strengthening communities, protecting wildlife, and respecting the environment in which we operate.</p>
       </div>
     </div>    
     <div class="max-w-6xl grid grid-rows-auto md:grid-rows-1 md:grid-cols-2 gap-0 p-6 my-8 mx-auto">
-      <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-auto py-10 md:py-0 md:h-4/5 w-4/5 md:w-auto m-auto px-12 z-10">
-        <h1 class="font-sanomat leading-none mb-8 text-2xl md:text-6xl">Authenticity</h1>
-        <p class="text-center text-sm md:text-2xl mb-4 font-ddin leading-tight">Each Canadamark certified diamond comes with an assurance that your diamond is authentically Canadian.</p>
-        <p class="text-center text-sm md:text-2xl mb-4 font-ddin leading-tight">When a Canadamark diamond is cut and polished, a unique serial number is assigned to the stone which is then laser engraved on its girdle together with the Canadamark logo. This inscription is so small that it’s invisible to the naked eye and can only be seen using a microscope or diamond loupe.</p>
-        <p class="text-center text-sm md:text-2xl mb-4 font-ddin leading-tight">The same number can be found on the certificate card that came with your stone.</p>
-        <p class="text-center text-sm md:text-2xl mb-4 font-ddin leading-tight">You can enter this number below to verify if your diamond is an authentic Canadamark diamond and to follow your diamond’s unique journey from rough to polished.</p>
-        <p class="text-center text-sm md:text-2xl mb-4 font-ddin leading-tight">A Canadamark diamond will always have a unique laser inscription and be accompanied by a Canadamark certificate card.</p>
+      <div class="bg-cm-blue text-white flex flex-col justify-center items-center h-auto md:h-4/5 py-10 md:py-0 w-4/5 md:w-auto m-auto px-8 z-10">
+        <h1 class="font-sanomat leading-none mb-4 text-2xl md:text-6xl">Authenticity</h1>
+        <p class="text-center text-sm md:text-xl mb-2 font-ddin leading-tight md:leading-tighter">Each Canadamark certified diamond comes with an assurance that your diamond is authentically Canadian.</p>
+        <p class="text-center text-sm md:text-xl mb-2 font-ddin leading-tight md:leading-tighter">When a Canadamark diamond is cut and polished, a unique serial number is assigned to the stone which is then laser engraved on its girdle together with the Canadamark logo. This inscription is so small that it’s invisible to the naked eye and can only be seen using a microscope or diamond loupe.</p>
+        <p class="text-center text-sm md:text-xl mb-2 font-ddin leading-tight md:leading-tighter">The same number can be found on the certificate card that came with your stone.</p>
+        <p class="text-center text-sm md:text-xl mb-2 font-ddin leading-tight md:leading-tighter">You can enter this number below to verify if your diamond is an authentic Canadamark diamond and to follow your diamond’s unique journey from rough to polished.</p>
+        <p class="text-center text-sm md:text-xl mb-2 font-ddin leading-tight md:leading-tighter">A Canadamark diamond will always have a unique laser inscription and be accompanied by a Canadamark certificate card.</p>
       </div>
       <div class="-mt-20 sm:-mt-48 md:mt-0 md:-ml-12"><img class="h-auto md:h-full w-full md:w-auto" src="/images/authenticity.png" alt=""></div>
     </div>
