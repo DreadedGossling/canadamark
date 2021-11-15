@@ -70,13 +70,13 @@
     <div class="flex flex-col items-center justify-between p-6 text-center text-cm-black my-8">
       <h1 class="max-w-6xl font-sanomat text-2xl md:text-6xl">Carat</h1>
       <div class="flex mx-auto max-w-full">
-        <carat name=".5" />
-        <carat name=".75" />
-        <carat name="1" />
-        <carat name="1.5" />
-        <carat name="2" />
-        <carat name="2.5" />
-        <carat name="3" />
+        <carat name=".5" size="0" />
+        <carat name=".75" size="1" />
+        <carat name="1" size="2" />
+        <carat name="1.5" size="3" />
+        <carat name="2" size="4" />
+        <carat name="2.5" size="5" />
+        <carat name="3" size="6" />
       </div>
       <p class="max-w-6xl text-sm md:text-2xl mb-8 font-ddin leading-tight">Originally the carat was the weight of a carob seed which ancient lapidaries used to balance their scales, as the seeds in a carob pod are very uniform in weight. This weight was standardized to the metric system as 1 carat = 200 milligrams (one-fifth of a gram). A carat is further divided into points, with 100 points to a carat. In general terms, rough and polished diamonds are weighed to two decimal places.</p>
     </div>

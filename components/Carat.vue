@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-between items-center m-1 md:m-8 w-1/7">
-    <svg width="90%" viewBox="0 0 68 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <div class="flex flex-col justify-end items-center m-1 md:m-8 w-1/7" ref="wrapper">
+    <svg :class="widthClass" viewBox="0 0 68 67" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M34 66C51.9492 66 66.5 51.4492 66.5 33.5C66.5 15.5508 51.9492 1 34 1C16.0507 1 1.5 15.5508 1.5 33.5C1.5 51.4492 16.0507 66 34 66Z" stroke="#677F91" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M66.4946 33.494L33.998 12.1807L1.50153 33.494L33.9981 54.8073L66.4946 33.494Z" stroke="#677F91" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M57.881 11.4688H10.1123V55.5267H57.881V11.4688Z" stroke="#677F91" stroke-linecap="round" stroke-linejoin="round"/>
@@ -16,6 +16,33 @@
 
 <script>
 export default {
-  props: ['name']
+  props: {name: String, size: String},
+  computed: {
+    widthClass(){
+      return "width-" + this.size
+    }
+  }
 }
 </script>
+
+<style scoped>
+  @media only screen and (min-width: 768px) {
+    .width-0 { width: 41px;}
+    .width-1 { width: 45px;}
+    .width-2 { width: 49px;}
+    .width-3 { width: 53px;}
+    .width-4 { width: 57px;}
+    .width-5 { width: 61px;}
+    .width-6 { width: 65px;}
+  }
+
+  @media only screen and (max-width: 767px) {
+    .width-0 { width: 22px;}
+    .width-1 { width: 24px;}
+    .width-2 { width: 26px;}
+    .width-3 { width: 28px;}
+    .width-4 { width: 30px;}
+    .width-5 { width: 32px;}
+    .width-6 { width: 34px;}
+  }
+</style>
