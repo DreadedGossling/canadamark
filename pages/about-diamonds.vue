@@ -36,21 +36,21 @@
             </div>
             <div class="mx-4">
               <h3 class="font-sanomat text-xs md:text-sm">Near Colorless</h3>
-              <h4 class="font-ddin tracking-widest text-base md:text-lg font-black">G H I</h4>
+              <h4 class="font-ddin tracking-widest text-base md:text-lg font-black">G H I J</h4>
             </div>
             <div class="mx-4 md:mr-0">
               <h3 class="font-sanomat text-xs md:text-sm">Faint Yellow</h3>
-              <h4 class="font-ddin tracking-widest text-base md:text-lg font-black">J K</h4>
+              <h4 class="font-ddin tracking-widest text-base md:text-lg font-black">K L M</h4>
             </div>
           </div>
           <div class="flex mx-auto">
             <div class="mx-4 md-ml-0">
               <h3 class="font-sanomat text-xs md:text-sm">Very Light Yellow</h3>
-              <h4 class="font-ddin tracking-widest text-base md:text-lg font-black">L M</h4>
+              <h4 class="font-ddin tracking-widest text-base md:text-lg font-black">N O P Q R</h4>
             </div>
             <div class="mx-4">
               <h3 class="font-sanomat text-xs md:text-sm">Light Yellow</h3>
-              <h4 class="font-ddin tracking-widest text-base md:text-lg font-black">N O P Q R S T U V W X Y Z</h4>
+              <h4 class="font-ddin tracking-widest text-base md:text-lg font-black">S T U V W X Y Z</h4>
             </div>
           </div>
         </div>
