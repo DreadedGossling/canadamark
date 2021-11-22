@@ -59,7 +59,7 @@ export default {
       {name: 'Shree Ramkrishna Exports Pvt. Ltd.', emails: ['chirag.rc@srk.me'], url: 'https://srk.one/', phones: ['+91 261 4040 555']},
       {name: 'Singh Diamonds', emails: ['karan@singhdiamonds.com', 'info@singhdiamonds.com'], url: 'http://www.singhdiamonds.com/', phones: ['+91 22 26754675']},
       {name: 'Star Rays', emails: ['rahul@starrays.com'], url: 'http://starrays.com', phones: ['+91 261 255 4444']},
-      {name: 'Venus Jewels', emails: ['akshay@venusjewel.com'], url: 'http://www.venusjewel.com/', phones: ['+91 22 2672 0000']},]
+      {name: 'Venus Jewels', emails: ['ojash@venusjewel.com'], url: 'http://www.venusjewel.com/', phones: ['+91 22 2672 0000']},]
     return {
       activeTab: 'jewellery',
       tabContent: {
