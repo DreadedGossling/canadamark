@@ -1,6 +1,6 @@
 <template>
   <div>
-    <video src="/videos/our-journey.mkv" class="bg-video" autoplay loop playsinline muted></video>
+    <video src="/videos/our-journey.mp4" class="bg-video" autoplay loop playsinline muted></video>
     <div class="video-section text-white flex flex-col items-center justify-between">
       <h1 class="mt-12 font-sanomat text-2xl md:text-6xl">Our Promise</h1>
       <p class="mb-12 max-w-6xl text-center font-ddin leading-tight p-4 text-sm md:text-2xl">We promise that all Canadamark diamonds are responsibly mined in Canada’s Northwest Territories with respect for the sustainability of the natural environment and people living in the community.</p>
