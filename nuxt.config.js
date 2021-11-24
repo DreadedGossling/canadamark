@@ -1,6 +1,6 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'ssr',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -46,7 +46,9 @@ export default {
   modules: [
     '@nuxtjs/sitemap',
   ],
-
+  sitemap: {
+    hostname: 'https://www.canadamark.com',
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
