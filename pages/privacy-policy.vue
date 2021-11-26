@@ -48,10 +48,10 @@
 
     <h2>Accuracy and Updating your Personal Information </h2>
     <p>It is your responsibility to give us current, complete, truthful and accurate information, including personally identifiable information, and to keep such information up to date. We cannot and will not be responsible for any problems or liability that may arise if you do not give us accurate, truthful or complete information or if you fail to update such information. We will reject and delete any entry that we believe in good faith to be false, fraudulent or inconsistent with this Privacy Policy.</p>
-    <p>You may contact us to change or update the personal information that you have previously provided by contacting our Privacy Officer at privacyofficer@ddcorp.ca.</p>
+    <p>You may contact us to change or update the personal information that you have previously provided by contacting our Privacy Officer at <a href="privacyofficer@arcticcanadian.ca">privacyofficer@arcticcanadian.ca</a>.</p>
 
     <h2>Questions</h2>
-    <p>Questions about this Privacy Policy or practices relating to this Site should be directed to our Privacy Officer at privacyofficer@ddcorp.ca.</p>
+    <p>Questions about this Privacy Policy or practices relating to this Site should be directed to our Privacy Officer at <a href="privacyofficer@arcticcanadian.ca">privacyofficer@arcticcanadian.ca</a>.</p>
     <p>Last Updated: October 30, 2017</p>
   </div>
 </template>
