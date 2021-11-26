@@ -31,7 +31,7 @@
     <ul class="list-disc list-inside mb-12">
       <li>Comply with any law, regulation, court order, legal process, subpoena, or government request;</li>
       <li>Investigate or prevent any potentially fraudulent or illegal activity;</li>
-      <li>Protect the safety, property, or rights of Dominion Diamond Mines and its affiliated companies (collectively, the “Company”), the Site, our users (or others); or</li>
+      <li>Protect the safety, property, or rights of Arctic Canadian Diamond Company Ltd. and its affiliated companies (collectively, the “Company”), the Site, our users (or others); or</li>
       <li>Enforce our Terms and Conditions and other agreements; and</li>
       <li>We may disclose or transfer your information, including personally identifiable information, in connection with a proposed or actual merger, sale or acquisition of the Company or any of its assets, or in connection with a insolvency, receivership, or bankruptcy proceeding.</li>
     </ul>
