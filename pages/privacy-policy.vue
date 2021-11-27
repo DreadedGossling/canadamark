@@ -52,7 +52,7 @@
 
     <h2>Questions</h2>
     <p>Questions about this Privacy Policy or practices relating to this Site should be directed to our Privacy Officer at <a href="mailto:privacyofficer@arcticcanadian.ca">privacyofficer@arcticcanadian.ca</a>.</p>
-    <p>Last Updated: October 30, 2017</p>
+    <p>Last Updated: November 20, 2021</p>
   </div>
 </template>
 
@@ -68,5 +68,11 @@ p {
 }
 li {
   @apply font-ddin text-cm-black text-base;
+}
+a {
+  @apply text-cm-blue;
+}
+a:hover {
+  text-decoration: underline;
 }
 </style>
