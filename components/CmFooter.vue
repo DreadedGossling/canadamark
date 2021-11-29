@@ -1,13 +1,14 @@
 <template>
 	<footer id="Footer" class="w-full z-10 font-body bottom-0 bg-cm-green text-white flex grid grid-rows-auto md:grid-rows-1 md:grid-cols-3 pb-8 md:pb-0">
     <div class="md:col-span-2 p-8 grid grid-cols-2 gap-x-8 gap-y-4">
-      <h1 class="font-sanomat col-span-2 text-2xl md:text-5xl">Get in Touch</h1>
+      <h1 class="font-sanomat col-span-1 text-2xl md:text-5xl">Get in Touch</h1>
+      <div class="col-span-1 font-ddin flex justify-end items-center text-sm"><span v-if="messageSent">Message Sent</span></div>
       <input v-model="name" class="col-span-2 md:col-span-1 bg-transparent font-ddin border border-white text-white leading-tight h-10 px-4" type="text" placeholder="Full Name">
       <input v-model="company" class="col-span-2 md:col-span-1 bg-transparent font-ddin border border-white text-white leading-tight h-10 px-4" type="text" placeholder="Company Name">
       <input v-model="email" class="col-span-2 md:col-span-1 bg-transparent font-ddin border border-white text-white leading-tight h-10 px-4" type="text" placeholder="Email Address">
       <input v-model="phone" class="col-span-2 md:col-span-1 bg-transparent font-ddin border border-white text-white leading-tight h-10 px-4" type="text" placeholder="Phone Number">
       <textarea v-model="message" class="col-span-2 bg-transparent font-ddin border border-white text-white leading-tight p-4" rows="5" placeholder="Your Message"></textarea>
-      <button class="col-span-2 bg-white text-cm-green h-10">Submit</button>
+      <button class="col-span-2 bg-white text-cm-green h-10" @click="submitForm">Submit</button>
     </div>
     <div class="md:col-span-1 md:p-8 flex">
       <div class="flex flex-col hidden md:flex">
@@ -74,6 +75,15 @@ export default {
       email: '',
       phone: '',
       message: '',
+      messageSent: false
+    }
+  },
+  methods: {
+    submitForm(){
+      this.name = this.company = this.email = this.phone = this.message = ''
+      this.messageSent = true
+      const that = this
+      setTimeout(function(){ console.log(that.messageSent = false) }, 3000);
     }
   }
 };
