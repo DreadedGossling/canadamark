@@ -59,11 +59,11 @@
     <div class="flex flex-col items-center justify-between p-6 text-center text-cm-black my-8">
       <h1 class="max-w-6xl font-sanomat text-2xl md:text-6xl">Clarity</h1>
       <div class="flex mx-auto max-w-full md:max-w-3xl">
-        <clarity name="Flawless,<br/>Internally Flawless" shortname="FL, IF"/>
-        <clarity name="Very Very<br/>Slightly Included" shortname="VVS1, VVS2"/>
-        <clarity name="Very Slightly<br/>Included" shortname="VS1, VS2"/>
-        <clarity name="Slightly<br/>Included" shortname="SI1, SI2"/>
-        <clarity name="Included" shortname="I1, I3"/>
+        <clarity name="Flawless,<br/>Internally Flawless" shortname="FL, IF" imageUrl="/images/clarity/fif.svg" />
+        <clarity name="Very Very<br/>Slightly Included" shortname="VVS1, VVS2" imageUrl="/images/clarity/vvsi.svg"/>
+        <clarity name="Very Slightly<br/>Included" shortname="VS1, VS2" imageUrl="/images/clarity/vsi.svg"/>
+        <clarity name="Slightly<br/>Included" shortname="SI1, SI2" imageUrl="/images/clarity/si.svg"/>
+        <clarity name="Included" shortname="I1, I3" imageUrl="/images/clarity/i.svg"/>
       </div>
       <p class="max-w-6xl text-sm md:text-2xl mb-8 font-ddin leading-tight">Quality is determined by how clean the diamond is inside. Very few diamonds can be described as “flawless”; most have inclusions which may be caused by carbon spots (piques), mineral inclusions (e.g. olivine, garnet, chromite), bubbles or cracks (gletz). The positioning of the inclusions within the diamond influences its value, as some inclusions may be polished out during the manufacturing process. Some diamonds may be so heavily included that it is almost impossible to see into them.</p>
     </div>
