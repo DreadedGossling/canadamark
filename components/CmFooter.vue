@@ -82,8 +82,6 @@ export default {
     submitForm(){
       this.name = this.company = this.email = this.phone = this.message = ''
       this.messageSent = true
-      const that = this
-      setTimeout(function(){ console.log(that.messageSent = false) }, 3000);
     }
   }
 };
