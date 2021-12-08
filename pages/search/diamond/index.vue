@@ -136,13 +136,13 @@ import axios from 'axios';
 export default {
   watch: {
     $route() {
-      this.query = this.$route.params.cm
+      this.query = this.$route.query.cm
       this.searchDiamond(this.query)
     }
   },
   data(){
     return {
-      query: this.$route.params.cm,
+      query: this.$route.query.cm,
       cmNumber: ' ',
       gia: ' ',
       carat: ' ',

@@ -15,7 +15,6 @@ export default {
   },
   methods: {
     width() {
-      console.log(this.name)
       if (this.name.length > 12 ) {
         return "w-40 -ml-7"
       }else{

@@ -130,9 +130,9 @@ export default {
     performSearch(){
       const prefix = this.searchQuery.split('-')[0]
       if (prefix && prefix.toLowerCase() === "cm"){
-        this.$router.push('/search/diamond/'+this.searchQuery)
+        this.$router.push('/search/diamond/?cm='+this.searchQuery)
       }else if (prefix && prefix.toLowerCase() === "cmj") {
-        this.$router.push('/search/jewelry/'+this.searchQuery)
+        this.$router.push('/search/jewelry/?cmj='+this.searchQuery)
       }else if (this.searchQuery !== "") {
         this.searchQuery = ""
       }

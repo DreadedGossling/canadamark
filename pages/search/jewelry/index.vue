@@ -85,13 +85,13 @@ import axios from 'axios';
 export default {
   watch: {
     $route() {
-      this.query = this.$route.params.cmj
+      this.query = this.$route.query.cmj
       this.searchJewelry(this.query)
     }
   },
   data(){
     return {
-      query: this.$route.params.cmj,
+      query: this.$route.query.cmj,
       mine: '',
       cmjNumber: ' ',
       diamondCount: ' ',
