@@ -46,10 +46,11 @@ export default {
   data(){
     const jewellery = [
       {name: 'Mahendra Brothers Exports Pvt. Ltd / Unidesign', emails: ['rishi@mahendrabrothers.com'], url: 'https://mahendrabrothers.com', phones: ['+91 22 6661 5600']},
-      {name: 'Corona Jewellery Company Ltd.', emails: ['mike@coronajewellery.com'], url: 'http://www.coronajewellery.com/', phones: ['+1 416 7622222']}]
+      {name: 'Corona Jewellery Company Ltd.', emails: ['mike@coronajewellery.com'], url: 'http://www.coronajewellery.com/', phones: ['+1 416 7622222']},
+      {name: 'C.J.Exporters India', emails: ['mitul@cjexporters.com', 'samirntr@yahoo.com'], url: null, phones: ['+91 9820023514', '+1 917 208-7701']}]
     const melee = [
       {name: 'Mahendra Brothers Exports Pvt. Ltd', emails: ['rishi@mahendrabrothers.com'], url: 'https://mahendrabrothers.com', phones: ['+91 22 6661 5600']},
-      {name: 'C.J.Exporters India', emails: ['mitul@cjexporters.com', 'samirntr@yahoo.com'], url: 'http://www.singhdiamonds.com/', phones: ['+91 9820023514', '+1 917 208-7701']}]
+      {name: 'C.J.Exporters India', emails: ['mitul@cjexporters.com', 'samirntr@yahoo.com'], url: null, phones: ['+91 9820023514', '+1 917 208-7701']}]
     const polishers = [
       {name: 'Corona Jewellery Company Ltd.', emails: ['mike@coronajewellery.com'], url: 'http://www.coronajewellery.com/', phones: ['+1 416 7622222']},
       {name: 'Finestar Jewellery and Diamonds Pvt. Ltd.', emails: ['nilesh@finestardiamonds.com', 'elza@finestardiamonds.com'], url: 'http://www.finestardiamonds.com', phones: ['+91 22 6663 9999']},
