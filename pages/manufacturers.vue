@@ -46,8 +46,7 @@ export default {
   data(){
     const jewellery = [
       {name: 'Mahendra Brothers Exports Pvt. Ltd / Unidesign', emails: ['rishi@mahendrabrothers.com'], url: 'https://mahendrabrothers.com', phones: ['+91 22 6661 5600']},
-      {name: 'Corona Jewellery Company Ltd.', emails: ['mike@coronajewellery.com'], url: 'http://www.coronajewellery.com/', phones: ['+1 416 7622222']},
-      {name: 'C.J.Exporters India', emails: ['mitul@cjexporters.com', 'samirntr@yahoo.com'], url: null, phones: ['+91 9820023514', '+1 917 208-7701']}]
+      {name: 'Corona Jewellery Company Ltd.', emails: ['mike@coronajewellery.com'], url: 'http://www.coronajewellery.com/', phones: ['+1 416 7622222']}]
     const melee = [
       {name: 'Mahendra Brothers Exports Pvt. Ltd', emails: ['rishi@mahendrabrothers.com'], url: 'https://mahendrabrothers.com', phones: ['+91 22 6661 5600']},
       {name: 'C.J.Exporters India', emails: ['mitul@cjexporters.com', 'samirntr@yahoo.com'], url: null, phones: ['+91 9820023514', '+1 917 208-7701']}]
@@ -60,7 +59,8 @@ export default {
       {name: 'Shree Ramkrishna Exports Pvt. Ltd.', emails: ['chirag.rc@srk.me'], url: 'https://srk.one/', phones: ['+91 261 4040 555']},
       {name: 'Singh Diamonds', emails: ['karan@singhdiamonds.com', 'info@singhdiamonds.com'], url: 'http://www.singhdiamonds.com/', phones: ['+91 22 26754675']},
       {name: 'Star Rays', emails: ['rahul@starrays.com'], url: 'http://starrays.com', phones: ['+91 261 255 4444']},
-      {name: 'Venus Jewels', emails: ['ojash@venusjewel.com'], url: 'http://www.venusjewel.com/', phones: ['+91 22 2672 0000']},]
+      {name: 'Venus Jewels', emails: ['ojash@venusjewel.com'], url: 'http://www.venusjewel.com/', phones: ['+91 22 2672 0000']},
+      {name: 'C.J.Exporters India', emails: ['mitul@cjexporters.com', 'samirntr@yahoo.com'], url: null, phones: ['+91 9820023514', '+1 917 208-7701']}]
     return {
       activeTab: 'jewellery',
       tabContent: {
