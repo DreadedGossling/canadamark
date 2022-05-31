@@ -6,10 +6,11 @@
     </div>
     <div class="py-16 max-w-6xl mx-auto">
       <h1 class="font-sanomat text-cm-blue text-center text-2xl md:text-6xl">Canadamark Manufacturers</h1>
-      <div class="font-ddin leading-tight text-center flex my-10 text-xs sm:text-base md:text-xl">
+      <div class="font-ddin leading-tight text-center flex my-10 text-xs sm:text-base md:text-xl px-5">
         <a class="p-1 sm:p-4 ml-auto cursor-pointer" :class="jewelleryTabClass" target="_blank" @click.prevent="activate('jewellery')">Jewellery Manufacturers</a>
         <a class="p-1 sm:p-4 cursor-pointer" :class="diamondTabClass" target="_blank" @click="activate('melee')">Melee Manufacturers</a>
-        <div class="p-1 sm:p-4 mr-auto cursor-pointer" :class="polishersTabClass" target="_blank" @click="activate('polishers')">Certified Polishers</div>
+        <div class="p-1 sm:p-4 cursor-pointer" :class="polishersTabClass" target="_blank" @click="activate('polishers')">Certified Polishers</div>
+        <div class="p-1 sm:p-4 mr-auto cursor-pointer" :class="wholesalersTabClass" target="_blank" @click="activate('wholesalers')">Polished Wholesalers</div>
       </div>
       <div class="grid grid-col-1 md:grid-cols-2 font-ddin leading-tight gap-y-4 px-6">
         <div v-for="item in activeTabData" :key="item.name">
@@ -61,12 +62,15 @@ export default {
       {name: 'Star Rays', emails: ['rahul@starrays.com'], url: 'http://starrays.com', phones: ['+91 261 255 4444']},
       {name: 'Venus Jewels', emails: ['ojash@venusjewel.com'], url: 'http://www.venusjewel.com/', phones: ['+91 22 2672 0000']},
       {name: 'C.J.Exporters India', emails: ['mitul@cjexporters.com', 'samirntr@yahoo.com'], url: null, phones: ['+91 9820023514', '+1 917 208-7701']}]
+    const wholesalers = [
+      {name: 'Vantyghem Diamonds', emails: ['kevin@vantyghemdiamonds.com'], url: 'http://www.vantyghemdiamonds.com/', phones: ['+1 519 591 5727']}]    
     return {
       activeTab: 'jewellery',
       tabContent: {
         jewellery,
         melee,
         polishers,
+        wholesalers,
       }
     }
   },
@@ -92,6 +96,9 @@ export default {
     },
     polishersTabClass(){
       return this.calculateTabClass('polishers')
+    },
+    wholesalersTabClass(){
+      return this.calculateTabClass('wholesalers')
     },
     activeTabData(){
       return this.tabContent[this.activeTab]
